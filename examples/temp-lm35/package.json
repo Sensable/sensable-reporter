@@ -1,0 +1,13 @@
+{
+  "name": "temp-lm35-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "2.x",
+    "johnny-five": "0.7.x",
+    "sensable-reporter": "latest"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "main": "temperature.js"
+}
