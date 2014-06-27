@@ -22,11 +22,11 @@ board.on("ready", function(){
         // LM35
         var celsius = (5 * this.value * 100) / 1024;
         console.log("currently measured " + celsius + "°C");
-        tempReporter.upload(parseFloat(celsius.toFixed(1)), (+new Date()), function(err) {
+        tempReporter.upload(parseFloat(celsius.toFixed(1)), (+new Date()), function(err, response) {
             if(err) {
                 console.log(err);
             } else {
-                console.log("posted the data");
+                console.log("posted the data, statusCode was: ", response.statusCode);
             }
         });
     });
