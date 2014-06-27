@@ -13,15 +13,21 @@ var tempReporter = sensableReporter({
 
 board.on("ready", function(){
     var tmpSensor = new five.Sensor({
-      pin: "A1", 
-      freq: pollFrequency,
-      threshold: 2  // also report if the temperature jumps by 2 up or down
+        pin: "A1",
+        freq: pollFrequency,
+        threshold: 2  // also report if the temperature jumps by 2 up or down
     });
 
     tmpSensor.on("data", function() {
         // LM35
         var celsius = (5 * this.value * 100) / 1024;
         console.log("currently measured " + celsius + "°C");
-        tempReporter.upload(parseFloat(celsius.toFixed(1)), (+new Date()));
+        tempReporter.upload(parseFloat(celsius.toFixed(1)), (+new Date()), function(err) {
+            if(err) {
+                console.log(err);
+            } else {
+                console.log("posted the data");
+            }
+        });
     });
 });
