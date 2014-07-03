@@ -8,7 +8,8 @@ var tempReporter = sensableReporter({
     type: "temperature",
     latitude: -3.0758149613047263,
     longitude: 37.35333376583884
-
+}, {
+    accessToken: "<put token here>"
 });
 
 board.on("ready", function(){
