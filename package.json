@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrkaatz/sensable-reporter.git"
+    "url": "https://github.com/Sensable/sensable-reporter.git"
   },
   "keywords": [
     "sensable.io",
@@ -18,9 +18,9 @@
   "author": "Christian Kaatz <chrkaatz@googlemail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrkaatz/sensable-reporter/issues"
+    "url": "https://github.com/Sensable/sensable-reporter/issues"
   },
-  "homepage": "https://github.com/chrkaatz/sensable-reporter",
+  "homepage": "http://sensable.io",
   "dependencies": {
     "request": "^2.36.0"
   }

@@ -9,8 +9,7 @@ usage
 -----
 
     var sensableReporter = require("sensable-reporter");
-    // the second general settings object is only needed if you want
-    // to connect your sensable with your account
+    // the second general settings object have to contain your accessToken
     var tmpReporter = sensableReporter({
             sensorid: "foo-sensor",
             unit: "°c",
@@ -18,10 +17,10 @@ usage
             latitude: "10.0",
             longitude: "5.0"
         }, {
-            userid: "xyz",
-            private: true
+            accessToken: "xyz-lshfosn",  //this token needs to be retrieved from sensable.io
+            private: false
         });
-    var celsius = 31.1234;
+    var celsius = 31234;
     tempReporter.upload(
         parseFloat(celsius.toFixed(1)),
         (+new Date()),
