@@ -1,6 +1,6 @@
 {
   "name": "sensable-reporter",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "A simple library to report data via node to sensable.io",
   "main": "lib/reporter.js",
   "scripts": {
