@@ -7,7 +7,8 @@ var tempReporter = sensableReporter({
     unit: "°c",
     type: "temperature",
     latitude: -3.0758149613047263,
-    longitude: 37.35333376583884
+    longitude: 37.35333376583884,
+    name: "sensor on the kilimanjaro"
 }, {
     accessToken: "<put token here>"
 });

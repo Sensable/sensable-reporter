@@ -15,12 +15,13 @@ usage
             unit: "°c",
             sensortype: "temperature",
             latitude: "10.0",
-            longitude: "5.0"
+            longitude: "5.0",
+            name: "readble name for foo-sensor"
         }, {
             accessToken: "xyz-lshfosn",  //this token needs to be retrieved from sensable.io
             private: false
         });
-    var celsius = 31234;
+    var celsius = 32;
     tempReporter.upload(
         parseFloat(celsius.toFixed(1)),
         (+new Date()),
