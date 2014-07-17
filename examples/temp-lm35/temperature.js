@@ -3,7 +3,7 @@ var board = new five.Board();
 var pollFrequency = (60 * 60 * 1000); // every hour
 var sensableReporter = require("sensable-reporter");
 var tempReporter = sensableReporter({
-    sensorid: "my-kilimanjaro-lm35-sensor",
+    sensorid: "myKilimanjaroLm35Sensor",
     unit: "°c",
     type: "temperature",
     latitude: -3.0758149613047263,

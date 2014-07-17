@@ -11,7 +11,7 @@ usage
     var sensableReporter = require("sensable-reporter");
     // the second general settings object have to contain your accessToken
     var tmpReporter = sensableReporter({
-            sensorid: "foo-sensor",
+            sensorid: "FooSensor",
             unit: "°c",
             sensortype: "temperature",
             latitude: "10.0",
