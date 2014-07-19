@@ -26,9 +26,9 @@ board.on("ready", function(){
         console.log("currently measured " + celsius + "°C");
         tempReporter.upload(parseFloat(celsius.toFixed(1)), (+new Date()), function(err, response, body) {
             if(err) {
-                console.log("error: ", err);
+                console.log("error: ", err, body.message);
             } else {
-                console.log("posted the data, statusCode was: ", response.statusCode, " with message", body.message );
+                console.log("posted the data, statusCode was:", response.statusCode, ">>", body.message );
             }
         });
     });
